@@ -95,8 +95,6 @@
 		9AD9D9F01B6EBF7700AD49AC /* CustomHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD9D9EF1B6EBF7700AD49AC /* CustomHeaderFooterView.swift */; };
 		9AD9D9F21B6EBF8800AD49AC /* CustomHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD9D9F11B6EBF8800AD49AC /* CustomHeaderFooterView.xib */; };
 		9ADA63331B88A56F0060B2C0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADA63321B88A56F0060B2C0 /* TableViewController.swift */; };
-		D23F620B1F186E40001C4377 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23F62091F186E40001C4377 /* Realm.framework */; };
-		D23F620C1F186E40001C4377 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23F620A1F186E40001C4377 /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,8 +290,6 @@
 		9AD9D9F11B6EBF8800AD49AC /* CustomHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomHeaderFooterView.xib; path = "Headers:Footers/CustomHeaderFooterView.xib"; sourceTree = "<group>"; };
 		9ADA63321B88A56F0060B2C0 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = "Example controllers/TableViewController.swift"; sourceTree = "<group>"; };
 		9AF0031A1A5ABE7000ABFC90 /* Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D23F62091F186E40001C4377 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
-		D23F620A1F186E40001C4377 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		D23F706E1F18730B001C4377 /* DTModelStorage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTModelStorage.xcodeproj; path = Carthage/Checkouts/DTModelStorage/DTModelStorage.xcodeproj; sourceTree = "<group>"; };
 		D23F70941F18731A001C4377 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Carthage/Checkouts/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -333,8 +329,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D23F620B1F186E40001C4377 /* Realm.framework in Frameworks */,
-				D23F620C1F186E40001C4377 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,8 +433,6 @@
 			children = (
 				D23F706E1F18730B001C4377 /* DTModelStorage.xcodeproj */,
 				D23F70941F18731A001C4377 /* Nimble.xcodeproj */,
-				D23F62091F186E40001C4377 /* Realm.framework */,
-				D23F620A1F186E40001C4377 /* RealmSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1024,6 +1016,7 @@
 		9A2A38CF1AEE285E0021E97D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1058,6 +1051,7 @@
 		9A2A38D01AEE285E0021E97D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
